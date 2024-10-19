@@ -33,6 +33,11 @@ body {
         }
 
         /* Section Styling */
+        .container{
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
         section {
             padding: 20px 0;
             min-height: 80vh;
@@ -68,9 +73,9 @@ body {
             background-color: #dfe8f2;
         }
 
-        #home .container {
+        /* #home .container {
             text-align: center;
-        }
+        } */
 
         .home-wave{
             background-color: #dfe8f2;
@@ -79,9 +84,9 @@ body {
         .home-row-1{
             display: flex;
             align-items: center;
-            justify-content:space-around;
-            padding:5% 8%;
+            justify-content:space-between;
             min-height: auto;
+            gap: 2rem;
         }
 
         .home-row-1 p {
@@ -99,11 +104,16 @@ body {
         }
 
         .profile-summary {
-            max-width: 50% !important;
+            width: 80%;
         }
 
         .profile-contact-links{
-            text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           gap: 2rem;
+          
         }
 
         .profile-contact-links .resume-btn{
@@ -125,13 +135,12 @@ body {
         }
 
         .profile-contact-link{
-            margin:2% 0%;
+           
             cursor: pointer;
         }
 
         #profile-image{
-            max-width: 50%;
-            overflow: hidden;
+            /* overflow: hidden; */
             max-height: 300px;
             position: relative;
             border-radius: 50%;
@@ -175,7 +184,7 @@ body {
             content: '';
             position: absolute;
             margin-top:5%;
-            margin-left: 5%;
+            margin-left: 6.5%;
             width: 7px;
             height: 80%;
             background-color: #9bb3cf;
@@ -440,16 +449,19 @@ body {
             }
 
             .box{
-                margin:5%;
+               padding: 1rem;
+               margin: 1rem;
             }
 
             #education h2.section-heading {
                 font-size: 2rem;
             }
 
+            .profile-summary{
+                width: 100%;
+            }
             .home-row-1{
-                display: block;
-                justify-content: center;
+                flex-direction: column-reverse;
             }
 
             .school-name {
