@@ -354,15 +354,15 @@ body {
         }
         
         .btn-dark {
-            background-color: #343a40;
-            border-color: #343a40;
-            transition: background-color 0.3s;
-        }
-        
+            background-color: #121d29;
+                border-color: #121d29;
+                transition: background-color 0.3s;
+            }
+
         .btn-dark:hover {
-            background-color: #495057;
-            border-color: #495057;
-        }
+                background-color: #495057;
+                border-color: #495057;
+         }
 
         .project-row{
             margin: 5% 0%;
