@@ -462,7 +462,69 @@
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
-        })
+        });
+
+        const headings = document.querySelectorAll(".section-heading");
+
+        // }
+
+        // Typing effect function
+        function typeEffect(element, speed = 100) {
+            const childNodes = Array.from(element.childNodes); // Get all child nodes (including text and spans)
+            element.innerHTML = ''; // Clear the content for typing effect
+
+            let index = 0;
+            function typeNextNode() {
+                if (index < childNodes.length) {
+                    let node = childNodes[index];
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        // If the node is a text node, type it character by character
+                        let text = node.textContent;
+                        let charIndex = 0;
+                        let typingInterval = setInterval(() => {
+                            if (charIndex < text.length) {
+                                element.innerHTML += text.charAt(charIndex);
+                                charIndex++;
+                            } else {
+                                clearInterval(typingInterval);
+                                index++;
+                                typeNextNode(); // Move to the next node after typing the text node
+                            }
+                        }, speed);
+                    } else {
+                        // If the node is an element (e.g., span), append it directly and move on
+                        element.appendChild(node);
+                        index++;
+                        typeNextNode(); // Move to the next node immediately after appending
+                    }
+                } else {
+                    element.classList.remove('typing'); // Remove typing class when done
+                }
+            }
+
+            typeNextNode(); // Start typing
+        }
+
+        // Observer callback function
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const heading = entry.target;
+                    if (!heading.classList.contains('typed') && !heading.parentNode.classList.contains('profile-summary')) { // Only type once
+                        heading.classList.add('typing', 'typed'); // Add typing and typed classes
+                        typeEffect(heading);
+                    }
+                }
+            });
+        }
+
+        // Create an observer to watch each heading
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5 // Adjust this for when you want the effect to trigger
+        });
+
+        // Observe each section heading
+        headings.forEach(heading => observer.observe(heading));
     });
 </script>
 

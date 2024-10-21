@@ -526,3 +526,24 @@ footer {
     background-color: black; /* Navy Blue footer */
     color: #ffffff; /* White footer text */
 }
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    /* display: inline-block; */
+    animation: blink-caret 0.7s step-end infinite;
+}
+
+/* Create a blinking cursor */
+.typing::after {
+    content: ' |'; /* You can change the content to an underscore (_) or another symbol if preferred */
+    /* position: absolute; */
+    right: 0;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from { border-right-color: rgba(0, 0, 0, 0.75); }
+    to { border-right-color: transparent; }
+}
