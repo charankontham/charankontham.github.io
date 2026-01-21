@@ -1,8 +1,8 @@
 # Hi there, I'm SRICHARAN KONTHAM 👋
 
-### 🚀 Passionate Software Engineer | Full Stack Developer | Java Enthusiast
+### 🚀 Passionate Software Engineer | Full Stack Developer
 
-Welcome to my GitHub profile! I'm a passionate software engineer with over **6+ years of coding experience**, **5+ years of handling projects independently**, and **3+ years of real-time industry experience**. I specialize in **full-stack development, microservices architecture**, and **cloud technologies**. Always eager to explore new development opportunities and build scalable, high-performance applications!
+Welcome to my GitHub profile! I'm a passionate software engineer with over **7 years of coding experience**, and **5+ years of real-time industry experience**. I specialize in **full-stack development, microservices architecture**, and **cloud technologies**. Always eager to explore new development opportunities and build scalable, high-performance applications!
 
 I am actively looking for great opportunities to further enhance my development skills and contribute to impactful projects. 
 
@@ -10,14 +10,20 @@ I am actively looking for great opportunities to further enhance my development 
 
 ## 👨‍💻 About Me
 
-- 🎓 **Master's Candidate:** Currently pursuing a **Master of Science in Computer Science** at **Florida Atlantic University** (Graduating in April 2025).
-- 💼 **Software Engineer:** Worked in **SS&C Eze Software** & **Meru Data LLP**, gaining expertise in Java, Spring Boot, Angular, React, and microservices-based architectures.
+- 🎓 **Master's Candidate:** **Master of Science in Computer Science** at **Florida Atlantic University** (Graduated in April 2025).
+- 💼 **Software Engineer:** Worked in **SS&C Eze Software** & **Meru Data LLP**, gaining expertise in Java, Spring Boot, C#.Net, Angular, React, and microservices-based architectures.
 - 🚀 **Innovator & Problem Solver:** Passionate about **developing AI-powered applications**, **optimizing performance**, and **enhancing system scalability**.
 - 🏆 **Achievements:** Received a **SPOT Award** for outstanding performance at SS&C Eze Software and secured **3rd place in a 24-hour web development hackathon** at JNTU University.
 
 ---
 
 ## 💼 Professional Experience
+
+### ❇️ **Full Stack Software Developer - Contract**  
+**ModMed (May 2025 – Present)**
+- Developed and supported enterprise applications using **Java, Spring Boot, Angular, and Redis**, implementing a **micro-frontend architecture** for a customer support dashboard to enable modular UI development and independent deployments.
+- Designed and built **RESTful APIs** for end-to-end payment processing workflows, integrating with Adyen for authorization, capture, refunds, chargebacks, and real-time status updates, with **Redis-backed caching webhook processing, idempotency, and retry handling** to improve performance and reliability.
+- Implemented **secure payment business logic** for dynamic charges (surcharging, tipping, additional fees), with robust validation and error handling.
 
 ### ❇️ **Software Engineer**  
 **SS&C Eze Software (July 2021 – July 2023)**  
@@ -28,11 +34,10 @@ I am actively looking for great opportunities to further enhance my development 
 - Participated in **Agile Scrum teams**, ensuring high-quality feature delivery.
 
 ### ❇️ **Software Engineer Intern**  
-**Meru Data LLP (September 2020 – July 2021)**  
+**Meru Data LLP (March 2019 – July 2021)**  
 - Enhanced a **Data Governance Tool** with **C# .NET, Angular, and ElasticSearch** for **10+ clients**.
 - Researched and implemented **GraphQL APIs**, improving data-fetching efficiency.
 - Developed and deployed **containerized solutions** using Docker, optimizing production environments.
-
 ---
 
 ## 🔥 Tech Stack
